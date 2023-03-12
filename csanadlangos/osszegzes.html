@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="hu">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="description" content="Csanád Lángos">
+        <meta name="keyword" content="Csanád Lángos, Lángos, Békéscsaba">
+        <meta name="author" content="Patai Olivér & Makucza Olivér | GSZI - 11/B">
+        <link rel="icon" type="image/x-icon" href="./assets/csanadszakacs.png">
+        <title>Csanád Lángos | Összegzés</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="osszegzes.js"></script>
+    </head>
+    <body onload="kiirattatas()" class="bg-yellow-100 ">
+        <div class="w-full bg-yellow-900 h-1 z-50 fixed top-0">
+            <div class="bg-yellow-200 h-1 fixed" id="myBar"></div>
+        </div>
+        <nav class="fixed top-0 w-full bg-yellow-900 shadow-lg shadow-yellow-200 z-40">
+            <div class="mx-auto w-fit py-2.5">
+                <div class="flex items-center">
+                    <h1 class="text-3xl font-bold whitespace-nowrap text-yellow-200">Csanád Lángos
+                    </h1>
+                    <img src="assets/csanadszakacs.png" class="h-16 mx-3 object-center object-cover" alt="Csanád Lángos grafika" >
+                </div>
+            </div>
+        </nav>
+        <main class="text-yellow-900 py-[3rem] mt-[6rem] max-w-[100rem] w-[90%] mx-auto relative overflow-y-auto overflow-x-hidden">
+            <div class="flex flex-wrap  px-8 text-lg font-semibold">
+                <div
+                    class="w-full xl:rounded-xl rounded-t-xl xl:w-2/3 shadow-xl  shadow-yellow-900 lg:py-14 md:px-6 px-4 md:py-8 py-4 bg-yellow-50">
+                    <div class="flex items-center hover:cursor-pointer">
+                        <a href="rendeles.html"
+                            class="cursor-pointer text-xl font-bold border-2 border-yellow-900 transition ease-in-out delay-150 bg-yellow-200 hover:bg-yellow-300 duration-300 cursor-pointer  py-3 px-6 flex justify-around items-center rounded-3xl hover:bg-yellow-300 active:bg-yellow-400 group">
+                            <span class="w-6 h-auto mr-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="#713f12" viewBox="0 0 24 24" stroke="#713f12">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16l-4-4m0 0l4-4m-4 4h18"></path>
+                                </svg>
+                            </span>
+                            <span class="text-yellow-900 whitespace-nowrap">Vissza a főoldalra</span>
+                        </a>
+                    </div>
+                    <div class="text-4xl font-bold  py-4">
+                        Kosár
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/sajtostejfolos.jpg" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Sajtos-tejfölös lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="sajtostejfoloslangos_1"></label>
+                                </div>
+                                <div class="mb-2">
+                                    Só: <label id="sajtostejfoloslangos_2"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Fokhagyma: <label id="sajtostejfoloslangos_3"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 650 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/nutellaslangos.jpg" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Nutellás lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap  transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="nutellaslangos_1"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 900 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/kaproslangos.jpg" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Kapros lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="kaproslangos_1"></label>
+                                </div>
+                                <div class="mb-2">
+                                    Só: <label id="kaproslangos_2"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Fokhagyma: <label id="kaproslangos_3"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 750 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/krumplissonkas.jpg" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Krumplis-sonkás lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="krumplissonkaslangos_1"></label>
+                                </div>
+                                <div class="mb-2">
+                                    Só: <label id="krumplissonkaslangos_2"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Fokhagyma: <label id="krumplissonkaslangos_3"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 850 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/sajtossonkastoltottlangos.jpg" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Sajtos-sonkás töltött lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="sajtossonkastoltottlangos_1"></label>
+                                </div>
+                                <div class="mb-2">
+                                    Só: <label id="sajtossonkastoltottlangos_2"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Fokhagyma: <label id="sajtossonkastoltottlangos_3"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 800 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class=" md:flex items-strech md:py-10 transition ease-in-out delay-150 bg-yellow-50 hover:bg-yellow-100 duration-300 p-6 border-t-4 border-yellow-900">
+                        <div class="lg:w-1/2 xl:w-1/3 w-full">
+                            <img class="rounded-md shadow-md border-4 border-yellow-900 shadow-yellow-900 w-full object-center object-cover"
+                                src="assets/simalangos.png" alt="" >
+                        </div>
+                        <div class="lg:w-1/2 xl:w-2/3 w-full flex flex-col justify-start">
+                            <div class="m-6">
+                                <h3 class="text-2xl font-bold mb-2 flex flex-col ">Sima lángos
+                                </h3>
+                                <div class="mb-2">
+                                    Mennyiség: <label
+                                        class="font-bold w-12 mb-2 text-yellow-50 whitespace-nowrap transition ease-in-out delay-150 hover:bg-yellow-800 duration 200 bg-yellow-900 rounded-md text-center border-4 border-yellow-900"
+                                        id="simalangos_1"></label>
+                                </div>
+                                <div class="mb-2">
+                                    Só: <label id="simalangos_2"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Fokhagyma: <label id="simalangos_3"></label>
+                                </div>
+                                <div class=" mb-2">
+                                    Egységár: 500 Ft
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full xl:rounded-xl rounded-b-xl xl:mt-8 xl:w-1/3 bg-yellow-200 shadow-xl shadow-yellow-900  h-full">
+                    <div class="flex flex-col h-auto lg:px-8 md:px-7 px-4 lg:py-20 md:py-10 py-6 ">
+                        <div>
+                            <p class="text-4xl font-bold  mb-4">A megrendelés összefoglalása</p>
+                            <div class="flex items-center justify-between pt-5">
+                                <p class="text-xl font-bold">Szállítás:</p>
+                                <p class="   italic">Ingyenes</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex items-center pb-6 justify-between lg:pt-5 pt-20">
+                                <p class="text-3xl font-bold   ">Összesen</p>
+                                <p id="osszeg" class="text-3xl font-bold  text-right  "></p>
+                            </div>
+                            <button id="open" type="button"
+                                class="transition ease-in-out delay-150 bg-yellow-900 hover:bg-yellow-800 duration-300 cursor-pointer text-yellow-200 text-xl w-full font-bold  py-3 px-6 flex justify-center items-center rounded-lg active:bg-yellow-700 group">
+                                <span>Megrendelés</span>
+                                <span class="w-6 h-auto ml-3">
+                                    <svg class="" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                        aria-hidden="true">
+                                        <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                                        <path clip-rule="evenodd" fill-rule="evenodd"
+                                            d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z">
+                                        </path>
+                                    </svg>
+                                </span>
+                            </button>
+                            <div id="overlay" class="fixed hidden z-40 w-screen h-screen inset-0 bg-black bg-opacity-50"></div>
+                            <div id="dialog"
+                                class="hidden fixed z-50 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 max-w-[25%] w-full  min-w-[25rem] bg-yellow-50 text-yellow-900 text-lg rounded-xl px-8 py-6 shadow-lg shadow-yellow-200">
+                                <div class="flex justify-between">
+                                    <div>
+                                        <h3 class="mb-4 text-xl font-bold">Szállítási adatok</h3>
+                                    </div>
+                                    <div>
+                                        <button type="button" id="close">
+                                            <svg aria-hidden="true" class="w-8 h-8 bg-transparent" fill="#713f12" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                <form class="space-y-6" action="#">
+                                    <div>
+                                        <label class="block mb-2">Név</label>
+                                        <input
+                                            class="bg-yellow-100 border border-yellow-900 text-yellow-900 rounded-lg focus:ring-yellow-200 focus:border-yellow-800 block w-full p-2.5"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2">Telefonszám</label>
+                                        <input
+                                            class="bg-yellow-100 border border-yellow-900 text-yellow-900 rounded-lg focus:ring-yellow-200 focus:border-yellow-800 block w-full p-2.5"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2">Szállítási cím</label>
+                                        <input
+                                            class="bg-yellow-100 border border-yellow-900 text-yellow-900 rounded-lg focus:ring-yellow-200 focus:border-yellow-800 block w-full p-2.5"
+                                            required>
+                                    </div>
+                                    <div>
+                                        <label class="block mb-2">Megjegyzés</label>
+                                        <textarea rows="4"
+                                            class="bg-yellow-100 border border-yellow-900 text-yellow-900 rounded-lg focus:ring-yellow-200 focus:border-yellow-800 block w-full p-2.5"></textarea>
+                                    </div>
+                                    <button onclick="langos_erkezes()" type="button"
+                                        class="transition ease-in-out delay-150 bg-yellow-900 hover:bg-yellow-800 duration-300 cursor-pointer text-yellow-200 text-xl w-full font-bold  py-3 px-6 flex justify-center items-center rounded-lg active:bg-yellow-700 group">
+                                        <span>Rendelés elküldése</span>
+                                        <span class="w-6 h-auto ml-3">
+                                            <svg class="" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                                                aria-hidden="true">
+                                                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"></path>
+                                                <path clip-rule="evenodd" fill-rule="evenodd"
+                                                    d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <div>
+                                        <label id="kiszallitas" class="block text-xl italic mt-6"></label>
+                                    </div>
+                                </form>
+                            </div>
+                            <script>
+                                var openButton = document.getElementById('open');
+                                var dialog = document.getElementById('dialog');
+                                var closeButton = document.getElementById('close');
+                                var overlay = document.getElementById('overlay');
+                                
+                                
+                                openButton.addEventListener('click', function () {
+                                  dialog.classList.remove('hidden');
+                                  overlay.classList.remove('hidden');
+                                });
+                                
+                                
+                                closeButton.addEventListener('click', function () {
+                                  dialog.classList.add('hidden');
+                                  overlay.classList.add('hidden');
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="bg-gradient-to-b from-yellow-100 to-yellow-200 p-6"></div>
+            <div class="py-4 px-8 bg-yellow-200"><span class="text-yellow-900 font-bold ">Készítette: Patai Olivér & Makucza
+                Olivér | Békéscsabai SZC Nemes Tihamér Technikum és Kollégium - 11/B</span>
+            </div>
+        </footer>
+        <script>
+            window.onscroll = function () { myFunction() };
+            
+            function myFunction() {
+              var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+              var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+              var scrolled = (winScroll / height) * 100;
+              document.getElementById("myBar").style.width = scrolled + "%";
+            }
+        </script>
+        <script src="osszegzes.js"></script>
+    </body>
+</html>
